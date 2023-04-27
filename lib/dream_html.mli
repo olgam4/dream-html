@@ -216,7 +216,84 @@ module Attr : sig
   val rel : _ string_attr
   val required : attr
   val reversed : attr
-  val role : _ string_attr
+
+  val role : [
+  | `alert
+  | `alertdialog
+  | `application
+  | `article
+  | `banner
+  | `button
+  | `cell
+  | `checkbox
+  | `columnheader
+  | `combobox
+  | `comment
+  | `complementary
+  | `contentinfo
+  | `definition
+  | `dialog
+  | `directory
+  | `document
+  | `feed
+  | `figure
+  | `form
+  | `generic
+  | `grid
+  | `gridcell
+  | `group
+  | `heading
+  | `img
+  | `link
+  | `list
+  | `listbox
+  | `listitem
+  | `log
+  | `main
+  | `mark
+  | `marquee
+  | `math
+  | `menu
+  | `menubar
+  | `menuitem
+  | `menuitemcheckbox
+  | `menuitemradio
+  | `meter
+  | `navigation
+  | `none
+  | `note
+  | `option
+  | `presentation
+  | `progressbar
+  | `radio
+  | `radiogroup
+  | `region
+  | `row
+  | `rowgroup
+  | `rowheader
+  | `scrollbar
+  | `search
+  | `searchbox
+  | `separator
+  | `slider
+  | `spinbutton
+  | `status
+  | `suggestion
+  | `switch
+  | `tab
+  | `table
+  | `tablist
+  | `tabpanel
+  | `term
+  | `textbox
+  | `timer
+  | `toolbar
+  | `tooltip
+  | `tree
+  | `treegrid
+  | `treeitem
+  ] to_attr
+
   val rows : int to_attr
   val rowspan : int to_attr
   val sandbox : _ string_attr
